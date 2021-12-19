@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Signika+Negative:wght@700&display=swap');
+
+:root {
+  --box-shadow: 3px 6px rgba(0, 0, 0, 0.3), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Comic Neue', cursive;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 10px auto;
+  width: 350px;
+}
+
+h1 {
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+h2 {
+  text-align: center;
+}
+
+h3 {
+  border-bottom: 1px solid #bbb;
+  padding-bottom: 10px;
+  margin: 15px 0 3px;
+}
+
+h4 {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.inc-exp-container {
+  background-color: #fff;
+  box-shadow: 3px 6px rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  border-radius: 10px;
+}
+
+.inc-exp-container > div {
+  flex: 1;
+  text-align: center;
+}
+
+.inc-exp-container > div:first-of-type {
+  border-right: 1px solid black;
+}
+
+.money {
+  font-size: 25px;
+  margin: 5px 0;
+}
+
+.money.plus {
+  color: rgb(14, 179, 55);
+}
+
+.money.minus {
+  color: #dd3320b9;
+}
+
+label {
+  display: inline-block;
+  margin: 8px 3px;
+}
+
+input[type='text'],
+input[type='number'] {
+  border: 1px solid #0c0c0c;
+  border-radius: 10px;
+  display: block;
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+}
+
+.btn {
+  cursor: pointer;
+  background-color: #4e35ca;
+  box-shadow: var(--box-shadow);
+  border-radius: 10px;
+  color: #fff;
+  border: 0;
+  display: block;
+  font-size: 16px;
+  margin: 10px 0 30px;
+  padding: 10px;
+  width: 100%;
+  font-family: 'Comic Neue', cursive;
+}
+
+.btn:focus,
+.delete-btn:focus {
+  outline: 0;
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.list li {
+  background-color: #fff;
+  box-shadow: var(--box-shadow);
+  border-radius: 5px;
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 10px;
+  margin: 15px 0;
+}
+
+.list li.plus {
+  border-left: 8px solid #03ad4a;
+}
+
+.list li.minus {
+  border-left: 8px solid #c0392b;
+}
+
+.delete-btn {
+  cursor: pointer;
+  background-color: #e74c3c;
+  border: 0;
+  color: #fff;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 2px 5px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(1720%, -50%);
+}
